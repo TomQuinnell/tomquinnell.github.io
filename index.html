@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Lol</title>
+  <style>
+  	body {background-color:#FF69B4 }
+  </style>
+</head>
+<body>
+<script>
+    function EyeVommit() {
+        'use strict';
+        var colors = ['red', 'orange', 'orange', 'yellow', 'green', 'blue', 'light-blue', 'magenta', 'purple', 'red'],
+            target = document.getElementById('rtext').children,
+            i,
+            len = colors.length,
+            inter = setInterval(function () {
+                colors.unshift(colors.pop());
+                for (i = 0; i < len; i++) {
+                    target[i].style.color = colors[i];
+                }
+            }, 200);
+    }
+</script>
+<div id="table1">
+    <marquee>
+    <p id="rtext">
+        <span id="s1">L</span><span id="s2">i</span><span id="s3">z</span><span> </span><span id="s4">s</span><span id="s5">m</span><span id="s6">e</span><span id="s7">l</span><span id="s8">l</span><span id="s9">z</span>
+    </p>
+    </marquee>
+</div>
+<script>
+EyeVommit();
+</script>
+</body>
+</html>
